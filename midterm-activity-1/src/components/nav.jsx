@@ -1,20 +1,13 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Nav() {
-    return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/students">Students</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+function Nav() {
+  return (
+    <nav style={{ padding: '10px', backgroundColor: '#f0f0f0', marginBottom: '20px' }}>
+      <Link to="/" style={{ marginRight: '15px' }}>Home</Link>
+      <Link to="/students" style={{ marginRight: '15px' }}>Students</Link>
+      <Link to="/about">About</Link>
+    </nav>
+  );
 }
+
+export default Nav;
